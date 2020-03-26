@@ -1,0 +1,49 @@
+.main-wrapper {
+  text-align: center;
+  color: white;
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0px;
+  width: 400px;
+  margin: 0 auto;
+}
+
+.shopping-list {
+  box-shadow: 20px 20px 0px #260e30;
+}
+  
+form {
+  display: flex;
+  flex-direction: row;
+}
+  
+form > input {
+  flex-grow: 1;
+  outline: none;
+  padding-left: 4px;
+  border: 0px;
+  height: 20px;
+}
+  
+.add-button {
+  border: 0px;
+  background: #783b94;
+  color: white;
+  outline: none;
+  
+  &:hover {
+    background: #4E2461;
+  }
+}
+  
+.list-text {
+  background: #4e2461;
+  padding: 10px 0px;
+  margin: 0px;
+}
+
+.loading {
+  box-shadow: 20px 20px 0px pink !important;
+}

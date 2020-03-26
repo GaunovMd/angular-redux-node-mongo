@@ -1,0 +1,16 @@
+<div class="list" *ngIf="(shoppingItems | async); else noItems">
+    <div 
+    class="list-item" 
+    *ngFor="let shopping of shoppingItems | async"
+    (click)="deleteItem(shopping.id)">
+      <span>{{ shopping.name }}</span>
+    </div>
+</div>
+
+<ng-template #noItems>
+    <div class="list">
+      <div class="no-items">
+        No items found. Are you sure there's <em>nothing</em> you want?
+      </div>
+    </div>
+</ng-template>
